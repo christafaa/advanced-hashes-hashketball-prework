@@ -215,7 +215,10 @@ def winning_team
     location[:players].each do |player_name, player_data|
       score += player_data[:points]
     end
-    if
+    if highest_score == nil || score > highest_score
+      highest_score = score
+      winner = 
+    end
   end
   winner
 end
