@@ -136,3 +136,7 @@ def show_size(name)
     end
   end
 end
+
+def team_colors(team_name)
+
+end
