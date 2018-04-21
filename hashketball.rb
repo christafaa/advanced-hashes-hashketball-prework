@@ -213,11 +213,8 @@ def winning_team
   game_hash.each do |location, team_data|
     score = 0
     location[:players].each do |player_name, player_data|
-      points = player_data[:points]
-      if most_points == nil || points > most_points
-        most_points = points
-        name = player_name
-      end
+      score += player_data[:points]
+
     end
   end
   name
