@@ -137,7 +137,7 @@ def show_size(name)
   end
 end
 
-def team_colors(team_name)
+def team_colors(name)
   game_hash.each do |location, team_data|
-    if team_data[]
+    if team_data[:name]
 end
