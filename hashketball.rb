@@ -156,4 +156,6 @@ end
 def player_numbers(name)
   result = []
   game_hash.each do |location, team_data|
+    if 
+  end
 end
