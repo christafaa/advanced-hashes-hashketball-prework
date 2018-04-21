@@ -184,7 +184,7 @@ def big_shoe_rebounds
       rebounds = player_data[:rebounds]
       if largest_shoe == nil || shoe_size > largest_shoe
         largest_shoe = shoe_size
-        rebounds =
+        rebounds_result = rebounds
 
       end
     end
