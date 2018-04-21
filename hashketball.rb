@@ -196,10 +196,10 @@ def most_points_scored
   name = nil
   game_hash.each do |location, team_data|
     location[:players].each do |player_name, player_data|
-      shoe_size = player_data[:shoe]
+      points = player_data[:points]
       rebounds = player_data[:rebounds]
-      if most_points == nil || shoe_size > most_points
-        most_points = shoe_size
+      if most_points == nil || points > most_points
+        most_points = points
         name = rebounds
       end
     end
