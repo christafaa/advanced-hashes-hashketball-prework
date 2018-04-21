@@ -147,4 +147,5 @@ end
 
 def team_names
   result = []
+  
 end
