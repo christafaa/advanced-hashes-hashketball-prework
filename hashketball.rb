@@ -167,7 +167,7 @@ end
 
 def player_stats(name)
   game_hash.each do |location, team_data|
-    location[:players].each do |player_name, player_data|
+    team_data[:players].each do |player_name, player_data|
       if name == player_name
         return player_data
       end
@@ -179,7 +179,7 @@ def big_shoe_rebounds
   largest_shoe = nil
   rebounds_result = nil
   game_hash.each do |location, team_data|
-    location[:players].each do |player_name, player_data|
+    team_data[:players].each do |player_name, player_data|
       shoe_size = player_data[:shoe]
       rebounds = player_data[:rebounds]
       if largest_shoe == nil || shoe_size > largest_shoe
@@ -195,7 +195,7 @@ def most_points_scored
   most_points = nil
   name = nil
   game_hash.each do |location, team_data|
-    location[:players].each do |player_name, player_data|
+    team_data[:players].each do |player_name, player_data|
       points = player_data[:points]
       if most_points == nil || points > most_points
         most_points = points
@@ -212,7 +212,7 @@ def winning_team
   winner = nil
   game_hash.each do |location, team_data|
     score = 0
-    location[:players].each do |player_name, player_data|
+    team_data[:players].each do |player_name, player_data|
       score += player_data[:points]
     end
     if highest_score == nil || score > highest_score
@@ -226,7 +226,7 @@ end
 def player_with_longest_name
   name = nil
   game_hash.each do |location, team_data|
-    location[:players].each do |player_name, player_data|
+    team_data[:players].each do |player_name, player_data|
       if name == nil || player_name.length > name.length
         name = player_name
       end
@@ -239,7 +239,7 @@ def long_name_steals_a_ton?
   most_steals = nil
   name = nil
   game_hash.each do |location, team_data|
-    location[:players].each do |player_name, player_data|
+    team_data[:players].each do |player_name, player_data|
       steals = player_data[:steals]
       if most_steals == nil || steals > most_steals
         most_steals = steals
