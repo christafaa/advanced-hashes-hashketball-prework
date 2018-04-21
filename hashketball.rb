@@ -211,9 +211,7 @@ def winning_team
   most_points = nil
   name = nil
   game_hash.each do |location, team_data|
-    if team_data[:team_name] == name
-      return team_data[:colors]
-    end
+    
   end
   name
 end
