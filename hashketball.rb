@@ -224,13 +224,13 @@ def winning_team
 end
 
 def player_with_longest_name
-  most_points = nil
+  name_length = nil
   name = nil
   game_hash.each do |location, team_data|
     location[:players].each do |player_name, player_data|
       points = player_data[:points]
-      if most_points == nil || points > most_points
-        most_points = points
+      if name_length == nil || points > name_length
+        name_length = points
         name = player_name
       end
     end
