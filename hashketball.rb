@@ -149,4 +149,6 @@ def team_names
   result = []
   game_hash.each do |location, team_data|
     result << team_data[:team_name]
+  end
+  result
 end
