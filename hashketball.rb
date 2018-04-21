@@ -222,3 +222,5 @@ def winning_team
   end
   winner
 end
+
+def player_with_longest_name
