@@ -122,5 +122,7 @@ def num_points_scored(name)
     location[:players].each do |player_name, player_data|
       if name == player_name
         return player_data[:points]
-
+      end
+    end
+  end
 end
