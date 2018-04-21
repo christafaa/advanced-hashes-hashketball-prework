@@ -182,7 +182,7 @@ def big_shoe_rebounds
     location[:players].each do |player_name, player_data|
       shoe_size = player_data[:shoe]
       rebounds = player_data[:rebounds]
-      if largest_shoe == nil || 
+      if largest_shoe == nil || shoe_size > largest_shoe
 
       end
     end
