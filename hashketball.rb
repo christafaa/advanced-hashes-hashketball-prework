@@ -209,7 +209,7 @@ end
 
 def winning_team
   highest_score = nil
-  name = nil
+  winner = nil
   game_hash.each do |location, team_data|
     score = 0
     location[:players].each do |player_name, player_data|
@@ -217,5 +217,5 @@ def winning_team
     end
     if
   end
-  name
+  winner
 end
