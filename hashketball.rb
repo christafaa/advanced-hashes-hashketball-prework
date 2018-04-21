@@ -224,7 +224,6 @@ def winning_team
 end
 
 def player_with_longest_name
-  name_length = nil
   name = nil
   game_hash.each do |location, team_data|
     location[:players].each do |player_name, player_data|
