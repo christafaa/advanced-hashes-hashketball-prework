@@ -197,10 +197,9 @@ def most_points_scored
   game_hash.each do |location, team_data|
     location[:players].each do |player_name, player_data|
       points = player_data[:points]
-      rebounds = player_data[:rebounds]
       if most_points == nil || points > most_points
         most_points = points
-        name = rebounds
+        name = player_name
       end
     end
   end
