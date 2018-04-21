@@ -6,7 +6,9 @@ def game_hash
       team_name: ""
       colors: []
       players: {
-        "" => {}
+        "" => {
+          number: 
+        }
       }
     },
     away: {
