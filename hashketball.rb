@@ -190,3 +190,7 @@ def big_shoe_rebounds
   end
   rebounds_result
 end
+
+def most_points_scored
+
+end
