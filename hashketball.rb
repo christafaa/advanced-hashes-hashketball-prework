@@ -14,14 +14,24 @@ def game_hash
           assists: ,
           steals: ,
           blocks: ,
-          slam_dunks: 
+          slam_dunks:
         }
       }
     },
     away: {
       team_name: ""
       colors: []
-      players:
+      players: {
+        "" => {
+          number: ,
+          shoe: ,
+          points: ,
+          rebounds: ,
+          assists: ,
+          steals: ,
+          blocks: ,
+          slam_dunks:
+        }
     }
   }
 end
