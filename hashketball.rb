@@ -154,5 +154,5 @@ def team_names
 end
 
 def player_numbers(name)
-  
+  result = []
 end
