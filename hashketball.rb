@@ -241,8 +241,8 @@ def long_name_steals_a_ton?
   game_hash.each do |location, team_data|
     location[:players].each do |player_name, player_data|
       steals = player_data[:steals]
-      if most_steals == nil || points > most_steals
-        most_steals = points
+      if most_steals == nil || steals > most_steals
+        most_steals = steals
         name = player_name
       end
     end
