@@ -217,7 +217,7 @@ def winning_team
     end
     if highest_score == nil || score > highest_score
       highest_score = score
-      winner = 
+      winner = team_data[:team_name]
     end
   end
   winner
